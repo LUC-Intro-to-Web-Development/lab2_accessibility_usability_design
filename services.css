@@ -1,0 +1,140 @@
+/* MPLS Dog Boarding: styles for services.html */
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222222;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #222222;
+}
+
+.site-header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 16px;
+}
+
+.site-header .brand {
+  margin-left: 0;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.promo {
+  margin: 8px 0;
+  padding: 14px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.promo1 {
+  background: #ffe600;
+  color: #000000;
+}
+
+.promo2 {
+  background: #d6001c;
+  color: #ffffff;
+}
+
+.promo2 a {
+  color: #ffffff;
+}
+
+.promo3 {
+  background: #00b7ff;
+  color: #000000;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 24px 0 8px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 24px 0 8px;
+}
+
+.grid8 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.btn {
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111111;
+  background: #ffffff;
+  border: 2px solid #333333;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.row label {
+  width: 80px;
+  font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  border: 4px solid #cccccc;
+  border-top-color: #333333;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+.spinner[hidden] {
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#list {
+  padding-left: 20px;
+}
+
+.site-footer {
+  padding: 16px 24px;
+  background: #dddddd;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .grid8 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

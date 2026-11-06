@@ -1,0 +1,135 @@
+/* MPLS Dog Boarding: styles for home.html */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+a {
+  color: #8ab4ff;
+}
+
+a:focus,
+.btn:focus,
+*:focus {
+  outline: none;
+}
+
+/* Page grid: header row, main row, footer row */
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px 1fr 15%;
+  width: 100vw;
+  min-width: 1000px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  background: #ffffff;
+}
+
+.top img {
+  width: 150px;
+}
+
+.menu a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* Main area with flexbox cards over a photo */
+#flexcontainer {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: url('img/dog_bg.jpeg') center / cover no-repeat;
+}
+
+.card {
+  flex: 1 0 325px;
+  height: 350px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 2%;
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 10px;
+}
+
+.hero {
+  flex: 1 1 90%;
+  height: 170px;
+}
+
+.card h2,
+.card h3 {
+  color: #b388d6;
+  font-size: 14px;
+}
+
+.card h5 {
+  color: #b8b8b8;
+  font-size: 11px;
+}
+
+.title {
+  font-size: 22px;
+  color: #c9a3e8;
+}
+
+.tagline {
+  font-size: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #f5a25d;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.paws {
+  display: block;
+  width: 120px;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  border-radius: 50%;
+}
+
+.green {
+  background: #2e9e4f;
+}
+
+.red {
+  background: #d64545;
+}
+
+.foot {
+  grid-column: 1 / 4;
+  grid-row: 3;
+  padding-top: 40px;
+  font-size: 11px;
+  color: #aaaaaa;
+  background: #f4f4f4;
+}

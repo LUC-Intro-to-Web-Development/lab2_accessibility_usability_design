@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Build an estimate for MPLS Dog Boarding services.">
+<title>Services | MPLS Dog Boarding</title>
+<link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="home.html" class="brand">MPLS Dog Boarding</a>
+  <nav aria-label="Main">
+    <a href="home.html">Home</a>
+    <a href="services.html">Services</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <div class="promo promo1">WELCOME!!! SPECIAL OFFER TODAY!!!</div>
+  <div class="promo promo2">NEW: WEBCAM ACCESS ONLY $10 <a href="#">CLICK HERE</a></div>
+  <div class="promo promo3">HOLIDAY SPOTS GOING FAST!!! BOOK NOW!!!</div>
+
+  <h1>Services</h1>
+
+  <section>
+    <h2>Pick a Service</h2>
+    <div class="grid8">
+      <button class="btn svc" data-key="boarding">Boarding</button>
+      <button class="btn svc" data-key="daycare">Daycare</button>
+      <button class="btn svc" data-key="grooming">Grooming</button>
+      <button class="btn svc" data-key="training">Training</button>
+      <button class="btn svc" data-key="webcam">Webcam Access</button>
+      <button class="btn svc" data-key="taxi">Pet Taxi</button>
+      <button class="btn svc" data-key="gift">Gift Cards</button>
+      <button class="btn svc" data-key="member">Memberships</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Info</h2>
+    <div class="row">
+      <label for="size">Size</label>
+      <select id="size">
+        <option value="S1">S1</option>
+        <option value="M2">M2</option>
+        <option value="L3">L3</option>
+        <option value="XL4">XL4</option>
+      </select>
+      <a href="#">See chart</a>
+    </div>
+    <div class="row">
+      <label for="d1">Date 1</label>
+      <input type="date" id="d1">
+    </div>
+    <div class="row">
+      <label for="d2">Date 2</label>
+      <input type="date" id="d2">
+    </div>
+    <div class="actions">
+      <button class="btn" id="reset">Reset</button>
+      <button class="btn" id="go">Go</button>
+      <button class="btn" id="send">Send</button>
+    </div>
+    <div id="spinner" class="spinner" hidden></div>
+  </section>
+
+  <section>
+    <h2>Kennel nights</h2>
+    <ul id="list"></ul>
+    <p>Est.: <span id="total">$0</span></p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2019 to 2026 MPLS Dog Boarding</p>
+</footer>
+
+<script src="services.js"></script>
+</body>
+</html>
